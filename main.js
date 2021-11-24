@@ -1,18 +1,16 @@
 const input = document.getElementById('input');
 const button = document.getElementById('button');
 const ul = document.getElementById('list');
-let li = document.createElement('li');
-
-
-
 
 button.addEventListener('click', function (event) {
-   const btnRemove = document.createElement('button')
-
+   const btnRemove = document.createElement('button');
    btnRemove.innerText = 'remove';
    btnRemove.classList.add('btn_remove_task');
+
+
+   const li = document.createElement('li');
+
    ul.appendChild(li);
-   li.classList.add('task_is_not_done');
    li.textContent = input.value;
 
    input.value = '';

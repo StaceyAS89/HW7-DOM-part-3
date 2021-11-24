@@ -1,4 +1,4 @@
-ul, .list_of_tasks {
+ul {
     padding: 0;
     width: 300px;
 }
@@ -7,14 +7,12 @@ li {
     height: 20px;
     padding: 10px;
     list-style-type: none;
-}
-li, .task_is_not_done  {
     background-color: #FFFF00;
 }
+    
 .task_is_done {
     background-color: #00FF00;
 }
 .btn_remove_task {
     float: right;
-
 }
