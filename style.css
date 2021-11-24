@@ -1,0 +1,20 @@
+ul, .list_of_tasks {
+    padding: 0;
+    width: 300px;
+}
+
+li {
+    height: 20px;
+}
+li, .task_is_not_done  {
+    list-style-type: none;
+    background-color: #FFFF00;
+    padding: 10px;
+}
+.task_is_done {
+    background-color: #00FF00;
+}
+.btn_remove_task {
+    float: right;
+
+}
