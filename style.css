@@ -1,18 +1,18 @@
 ul {
-    padding: 0;
-    width: 300px;
+  padding: 0;
+  width: 300px;
 }
 
 li {
-    height: 20px;
-    padding: 10px;
-    list-style-type: none;
-    background-color: #FFFF00;
+  height: 20px;
+  padding: 10px;
+  list-style-type: none;
+  background-color: #ffff00;
 }
-    
+
 .task_is_done {
-    background-color: #00FF00;
+  background-color: #00ff00;
 }
 .btn_remove_task {
-    float: right;
+  float: right;
 }
