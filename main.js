@@ -1,21 +1,32 @@
-const input = document.getElementById('input');
-const button = document.getElementById('button');
+const input = document.getElementById('inputTask');
+const button = document.getElementById('addBtn');
 const ul = document.getElementById('list');
 
-button.addEventListener('click', function (event) {
-   const btnRemove = document.createElement('button');
-   btnRemove.innerText = 'remove';
-   btnRemove.classList.add('btn_remove_task');
-
-
+function create(elementValue) {
    const li = document.createElement('li');
+   const liValue = document.createTextNode(elementValue)
 
    ul.appendChild(li);
-   li.textContent = input.value;
+   li.appendChild(liValue);
 
-   input.value = '';
-   li.appendChild(btnRemove);
+   const btnRemove = document.createElement('button');
+   const btnRemoveName = document.createTextNode('remove')
+ btnRemove.classList.add('btn_remove_task');
+ li.appendChild(btnRemove);
+ btnRemove.appendChild(btnRemoveName);
+}
+
+button.addEventListener('click', function (event) {
+   if (input.value) {
+
+      create(input.value);
+      input.value = '';
+
+   }
+
+ 
 })
+
 ul.addEventListener('click', function (event) {
 
    if (event.target.tagName === "LI") {
